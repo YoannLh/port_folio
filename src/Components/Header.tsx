@@ -27,6 +27,10 @@ const Logo = styled(Link)`
     font-size: 4.5em;
     text-align: center;
   }
+
+  @media (max-width: 800px) {
+    font-size: 3.5em;
+  }
 `
 
 const Menu = styled.nav`
