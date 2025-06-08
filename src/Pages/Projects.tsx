@@ -49,7 +49,7 @@ const ContainerText = styled.section`
   margin: auto;
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 95%;
   }
 `
 

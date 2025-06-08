@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const ContainerPhotoAndText = styled.section`
   display: flex;
-  width: 75%;
+  width: 95%;
   margin: auto;
 
   @media (max-width: 800px) {
