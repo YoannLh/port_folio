@@ -36,7 +36,7 @@ const Media = styled.a`
   }
   
   @media (max-width: 800px) {
-    margin: 50px auto;
+    margin: 25px auto;
   }
 }
 `

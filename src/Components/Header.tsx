@@ -5,8 +5,7 @@ const Container = styled.header`
   position: sticky;
   top: 0;
   display: flex;
-  height: 150px;
-  padding: 0 40px;
+  padding: 0 50px;
   justify-content: space-between;
   align-items: center;
   background-color: #242424;
