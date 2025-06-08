@@ -40,7 +40,7 @@ const Photo = styled.img`
   margin: 25px auto;
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 95%;
   }
 `
 

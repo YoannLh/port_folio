@@ -4,12 +4,12 @@ import styled from 'styled-components'
 const Container = styled.header`
   position: sticky;
   top: 0;
-  background-color: #242424;
   display: flex;
-  width: 100%;
   height: 150px;
+  padding: 0 40px;
   justify-content: space-between;
   align-items: center;
+  background-color: #242424;
 
   @media (max-width: 800px) {
     flex-direction: column;
