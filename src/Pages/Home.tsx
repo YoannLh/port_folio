@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 
+import photo from '../assets/photo.jpeg'
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -67,10 +69,7 @@ export default function Home() {
       <Header />
       <ContainerPhotoAndText>
         <ContainerPhoto>
-          <Photo
-            src="./src/assets/photo.jpeg"
-            alt="photo de Yoann L'hostis développeur"
-          />
+          <Photo src={photo} alt="photo de Yoann L'hostis développeur" />
         </ContainerPhoto>
         <ContainerText>
           <Text>Hello :)</Text>
