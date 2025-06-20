@@ -58,6 +58,12 @@ const Text = styled.p`
   font-size: 1.3em;
 `
 
+const TextBold = styled.p`
+  margin: auto;
+  font-size: 1.3em;
+  font-weight: bold;
+`
+
 const TextColorStatus = styled.div`
   display: flex;
   margin: auto;
@@ -81,20 +87,30 @@ const ColoredTextGreen = styled.p`
   margin: auto 0 auto 10px;
 `
 
+const Span = styled.span`
+  font-weight: bold;
+`
+
+const ClickMe = styled.p`
+  color: white;
+  font-size: 1.3em;
+  margin: auto 0 auto 10px;
+`
+
 export default function Projects() {
   return (
     <Container>
       <Header />
       <ContainerProject>
         <Title>Seven Minutes Workout</Title>
-        <Text>Stack :</Text>
+        <TextBold>Stack :</TextBold>
         <Text>React + Vite</Text>
         <Text>Express</Text>
         <Text>MongoDB</Text>
-        <Text>Deployment - CI / CD :</Text>
+        <TextBold>Deployment - CI / CD :</TextBold>
         <Text>Vercel</Text>
         <TextColorStatus>
-          <Text>Status :</Text>
+          <TextBold>Status :</TextBold>
           <ColoredTextOrange>WIP</ColoredTextOrange>
         </TextColorStatus>
         <Photo src={seven} alt="" />
@@ -104,19 +120,44 @@ export default function Projects() {
             particularité : l'utilisateur peut moduler les temps de workout et
             les pauses comme il le souhaite.
           </Text>
-          <Text>Business Model: abonnement et affiliation.</Text>
+          <Text>
+            <Span>Business Model</Span> : abonnement et affiliation.
+          </Text>
+        </ContainerText>
+      </ContainerProject>
+      <ContainerProject>
+        <Title>One Word</Title>
+        <TextBold>Stack :</TextBold>
+        <Text>React + Next</Text>
+        <Text>MongoDB</Text>
+        <TextBold>Deployment - CI / CD :</TextBold>
+        <Text>Vercel</Text>
+        <TextColorStatus>
+          <TextBold>Status :</TextBold>
+          <ColoredTextOrange>WIP</ColoredTextOrange>
+        </TextColorStatus>
+        <Photo src={oneWord} alt="" />
+        <ContainerText>
+          <Text>
+            L'idée ici est d'apprendre un mot ou une expression chaque jour dans
+            la ou les langues que l'on souhaite apprendre. À terme le
+            développement s'orientera plutôt vers le mobile.
+          </Text>
+          <Text>
+            <Span>Business Model</Span> : abonnement et affiliation.
+          </Text>
         </ContainerText>
       </ContainerProject>
       <ContainerProject>
         <Title>Fl!p</Title>
-        <Text>Stack :</Text>
+        <TextBold>Stack :</TextBold>
         <Text>React + Vite</Text>
         <Text>Express</Text>
         <Text>MongoDB</Text>
-        <Text>Deployment - CI / CD :</Text>
+        <TextBold>Deployment - CI / CD :</TextBold>
         <Text>Vercel</Text>
         <TextColorStatus>
-          <Text>Status :</Text>
+          <TextBold>Status :</TextBold>
           <ColoredTextOrange>WIP</ColoredTextOrange>
         </TextColorStatus>
         <Photo src={flip} alt="" />
@@ -125,41 +166,21 @@ export default function Projects() {
             Un memory où les cartes provoquent des actions sur le plateau du
             jeu. Se joue à deux online.
           </Text>
-          <Text>Business Model: publicité.</Text>
-        </ContainerText>
-      </ContainerProject>
-      <ContainerProject>
-        <Title>One Word</Title>
-        <Text>Stack :</Text>
-        <Text>React + Next</Text>
-        <Text>Express</Text>
-        <Text>MongoDB</Text>
-        <Text>Deployment - CI / CD :</Text>
-        <Text>Vercel</Text>
-        <TextColorStatus>
-          <Text>Status :</Text>
-          <ColoredTextOrange>WIP</ColoredTextOrange>
-        </TextColorStatus>
-        <Photo src={oneWord} alt="" />
-        <ContainerText>
           <Text>
-            L'idée ici est d'apprendre un mot ou une expression chaque jour dans
-            la ou les langues que l'on souhaite apprendre. À terme ce sera une
-            application mobile.
+            <Span>Business Model</Span> : publicité.
           </Text>
-          <Text>Business Model: abonnement et affiliation.</Text>
         </ContainerText>
       </ContainerProject>
       <ContainerProject>
         <Title>fast</Title>
-        <Text>Stack :</Text>
+        <TextBold>Stack :</TextBold>
         <Text>React Native + Expo</Text>
         <Text>Express</Text>
         <Text>MongoDB</Text>
-        <Text>Deployment - CI / CD :</Text>
+        <TextBold>Deployment - CI / CD :</TextBold>
         <Text>Apple Store / Google Play</Text>
         <TextColorStatus>
-          <Text>Status :</Text>
+          <TextBold>Status :</TextBold>
           <ColoredTextRed>POC</ColoredTextRed>
         </TextColorStatus>
         <Photo src={fast} alt="" />
@@ -172,7 +193,8 @@ export default function Projects() {
             en entretien si vous voulez ;) ).
           </Text>
           <Text>
-            Business Model: achat pour débloquer toutes les fonctionnalités.
+            <Span>Business Model</Span> : achat pour débloquer toutes les
+            fonctionnalités.
           </Text>
         </ContainerText>
       </ContainerProject>
@@ -182,13 +204,14 @@ export default function Projects() {
         target="_blank"
       >
         <Title>Les Flibustiers de la Finance</Title>
-        <Text>Stack:</Text>
+        <TextBold>Stack:</TextBold>
         <Text>Wordpress</Text>
-        <Text>Deployment - CI / CD :</Text>
-        <Text>Ionos</Text>
+        <TextBold>Deployment - CI / CD :</TextBold>
+        <Text>IONOS</Text>
         <TextColorStatus>
-          <Text>Status :</Text>
+          <TextBold>Status :</TextBold>
           <ColoredTextGreen>Production</ColoredTextGreen>
+          <ClickMe>(click me)</ClickMe>
         </TextColorStatus>
         <Photo src={lfdlf} alt="" />
         <ContainerText>
@@ -198,18 +221,21 @@ export default function Projects() {
             (j'écris entièrement mes articles sans IA, c'est volontairement une
             marque de fabrique).
           </Text>
-          <Text>Business Model: abonnement et affiliation.</Text>
+          <Text>
+            <Span>Business Model</Span> : affiliation.
+          </Text>
         </ContainerText>
       </ContainerProject>
       <ContainerProject href="https://yoannlh.github.io/pendu/" target="_blank">
         <Title>Pendu (pour décompresser après le boulot ;) )</Title>
-        <Text>Stack :</Text>
+        <TextBold>Stack :</TextBold>
         <Text>HTML + CSS + Typescript</Text>
-        <Text>Deployment - CI / CD :</Text>
+        <TextBold>Deployment - CI / CD :</TextBold>
         <Text>Github Pages</Text>
         <TextColorStatus>
-          <Text>Status :</Text>
+          <TextBold>Status :</TextBold>
           <ColoredTextGreen>Production</ColoredTextGreen>
+          <ClickMe>(click me)</ClickMe>
         </TextColorStatus>
         <Photo src={pendu} alt="" />
         <ContainerText>
@@ -218,7 +244,6 @@ export default function Projects() {
             aprèm pour un challenge (oui, le design est affreux, j'avais plus le
             temps ^^). Il y a environ 1600 mots (français) à trouver.
           </Text>
-          <Text>Business Model: none.</Text>
         </ContainerText>
       </ContainerProject>
       <Footer />

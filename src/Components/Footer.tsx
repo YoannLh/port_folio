@@ -14,7 +14,7 @@ const Text = styled.p`
 export default function Footer() {
   return (
     <Container>
-      <Text>Yoann L'hostis, Developper</Text>
+      <Text>Yoann Digital</Text>
       <Text>@2025</Text>
     </Container>
   )

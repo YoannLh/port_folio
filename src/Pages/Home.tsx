@@ -17,11 +17,12 @@ const Container = styled.div`
 
 const ContainerPhotoAndText = styled.section`
   display: flex;
+  height: 100%;
   width: 95%;
   margin: auto;
 
   @media (max-width: 800px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 `
 
@@ -35,7 +36,7 @@ const ContainerPhoto = styled.div`
 `
 
 const Photo = styled.img`
-  width: 100%;
+  width: 90%;
   height: 100%;
 
   @media (max-width: 800px) {
@@ -56,11 +57,15 @@ const ContainerText = styled.section`
 
 const Text = styled.p`
   padding: 0 25px;
-  font-size: 1.4em;
+  font-size: 1.5em;
 
   @media (max-width: 800px) {
     padding: 0;
   }
+`
+
+const Span = styled.span`
+  font-weight: bold;
 `
 
 export default function Home() {
@@ -72,20 +77,23 @@ export default function Home() {
           <Photo src={photo} alt="photo de Yoann L'hostis développeur" />
         </ContainerPhoto>
         <ContainerText>
-          <Text>Hello :)</Text>
           <Text>
-            Je suis un développeur, plutôt orienté front-end (spécialisé sur
-            ReactJS).
+            <Span>Hello :)</Span>
           </Text>
           <Text>
-            J'ai deux diplômes : un Bac+2 Développeur web junior et un Bac+3/4
-            Concepteur Développeur d'Application.
+            Je suis <Span>développeur</Span>, plutôt orienté web et {'  '}
+            <Span>front-end</Span> (spécialisé sur <Span>ReactJS</Span>).
           </Text>
           <Text>
-            J'ai déjà travaillé en CDI dans une startup (life!) et fais pas mal
-            de missions diverses et variées pour différents clients: un
-            restaurant, une prof de yoga, un négociant en vin, une boutique de
-            meubles, une boutique en ligne de mode etc).
+            J'ai deux diplômes : un <Span>Bac+2</Span> Développeur web junior et
+            un <Span>Bac+3/4</Span> Concepteur Développeur d'Application.
+          </Text>
+          <Text>
+            J'ai travaillé en CDI dans une <Span>startup</Span> (life!) en 2022
+            / 2023 et fait pas mal de <Span>missions</Span> diverses et variées
+            depuis pour différents <Span>clients</Span> : un restaurant, une
+            prof de yoga, un négociant en vin, une boutique de meubles, une
+            boutique e-commerce de vêtements de mode etc).
           </Text>
         </ContainerText>
       </ContainerPhotoAndText>
